@@ -1,0 +1,489 @@
+	@font-face {
+    	font-family: gotham-bold;
+    	src: url('../font/GothamBoldRegular.ttf');
+	}
+	@font-face {
+    	font-family: gotham-book;
+    	src: url('../font/gotham-book.otf');
+	}
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		font-size: 12pt;
+		font-weight: 200;
+		color: #FFF!important;
+	}
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+	}
+	
+	/*.container-fluid{
+		padding: 0px;
+	}*/
+	.container
+	{
+		width: 100%;
+		overflow: hidden;
+	}
+
+	#header
+	{	
+		position: fixed;
+		z-index: 99;
+		padding: 0;
+		width: 100%;
+	}
+	.navbar-header{
+		/*position: absolute;*/
+    	width: 16%;
+    	height: 100%;
+	}
+	.icon-bar{
+		background-color: black;
+	}
+	#menu{
+		width: 80%;
+		margin: 0 auto;
+	}
+	#menu ul
+	{
+		display: inline-block;
+	}
+	#menu ul li{
+		font-family: 'gotham-book' ,Sans-Serif!important;
+		font-weight: bold;
+		font-style: normal;
+    	text-transform: uppercase;
+    	text-decoration: none;
+    	-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+		background: transparent;
+		font-size: 14px;
+	}
+	#menu ul li a:hover {
+		background: transparent;
+		text-decoration: none; 
+		opacity: 0.7;
+    	-webkit-transition: all .4s ease-in-out;
+    	-moz-transition: all .4s ease-in-out;
+    	transition: all .4s ease-in-out;
+	}
+	#menu li {
+	    display: inline-block;
+	    padding-right: 22px;
+	    font-size: 15px;
+	}
+	#lista{
+		float: right;
+		padding: 35px 0 0 210px;
+	}
+	/*#menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}*/
+	#menu li a, #menu li span
+	{
+		color: rgba(0,0,0,.6);
+		float: left;
+		padding: 0;
+		padding-bottom: 35px;
+	}
+	.smaller{
+
+
+.	}
+	@media screen and (max-width: 600px) {
+		#menu{
+			padding: 0px;
+			width: 100%;
+			margin: 0px;
+		}
+		#logo{
+			margin: 0px;
+		}
+		#lista {
+			margin: 0 ;	
+			padding: 0px 0px 0px 0px;
+			float: left;
+		}
+		.navbar-header{
+			position: relative;
+    		width: 100%;
+    		height: 100%;
+		}
+		.navbar-nav{
+			width: 100%;
+			margin: auto;
+		}
+		#menu ul li{
+			position: relative;
+			float: left;
+			display: block;
+			width: 100%!important;
+		}
+		
+	}
+
+	/* min-width */
+	/*	@media screen and (min-width: 900px) {
+			.dois {
+				background: #F90;
+			}
+			span.gt900 {
+				display: inline-block;
+			}
+		}*/
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+	#nav{
+		width: 100%;
+		height: auto;
+		background-image: url(../img/645.jpg)!important;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	#banner
+	{
+		padding: 40px 0px 0px 0px;
+		font-size: 100%;
+		max-width: 1024px; 	
+		/*padding-bottom: 3em;*/
+		text-align: center;
+	}
+	#banner1{
+		margin: 0 auto;
+		width: 80%;
+	}
+	
+	#banner .title{
+		margin: 0 auto;
+	}
+	#banner .title p
+	{
+		font-size: 2em;
+	}
+	
+	#banner .title .byline
+	{
+		font-size: 1.5em;
+	}
+	
+	#banner .button
+	{
+		margin-bottom: 2em;
+		padding: 1.40em 3em;
+		border: 2px solid #055a83;
+		/*border-radius: 6px;*/
+		font-weight: 700;
+		font-size: 1em;
+		
+	}
+	@media screen and (max-width: 600px){
+		#banner{
+			padding: 0px!important;
+		}
+		#banner1{
+			margin: 0px!important;
+			width: 100%!important;
+			
+		}
+		#banner .title p
+		{
+			font-size: 1.4em!important;
+		}
+		#banner .title .byline
+		{
+			font-size: 1em!important;
+		}
+
+		section div .title2 {
+		    text-align: left!important;
+		}
+		#banner .button{
+			padding: 1em 1.7em;
+		}
+	}
+/*********************************************************************************/
+/*  Titles                                                                */
+/*********************************************************************************/
+
+	.title img{
+		width: 98%;
+		margin: auto;
+		opacity: 1;
+		webkit-animation: fadeTop 1s 1 cubic-bezier(.77,0,.175,1);
+    	-moz-animation: fadeTop 1s 1 cubic-bezier(.77,0,.175,1);
+    	-o-animation: fadeTop 1s 1 cubic-bezier(.77,0,.175,1);
+    		animation: fadeTop 1s 1 cubic-bezier(.77,0,.175,1);
+	}
+	
+	.title h1
+	{
+		font-size: 50px;
+	}
+	
+	.title .byline
+	{
+		font-size: 1.3em;
+		color: rgba(255,255,255,0.60);
+	}
+
+	.button
+	{
+		display: inline-block;
+		letter-spacing: 0.10em;
+		margin-top: 2em;
+		border: 2px solid #055a83;
+		border-radius: 3px;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1em;
+		color: #FFF;
+		transition: transform .2s;
+	}
+
+	.button:hover {
+		color: #FFF;
+		background-color: rgba(255,255,255, 0.4)!important;
+		text-decoration: none;
+		-webkit-transition: all .4s ease-in-out;
+    	-moz-transition: all .4s ease-in-out;
+    	transition: all .4s ease-in-out;
+	}
+
+
+/*********************************************************************************/
+/* Icons                                                                        */
+/*********************************************************************************/
+
+
+/*********************************************************************************/
+/* Section                                                                        */
+/*********************************************************************************/
+
+section{
+	background: #055a83;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+section div .title2{
+	text-align: right;
+}
+.title2 span{
+	font-family: gotham-bold, sans-serif;
+	font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
+    line-height: 1em;
+}
+section div .title3{
+	text-align: left;
+	line-height: 1.7em;
+}
+#conteudo{
+	position: relative;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+@media screen and (max-width: 600px){
+	section{
+		padding-top: 10px!important;
+		padding-bottom: 10px!important;
+	}
+	#conteudo{
+		width: 90%
+	}
+}
+
+
+/*********************************************************************************/
+/* Article                                                                        */
+/*********************************************************************************/
+#aviso h2{
+	text-align: center;
+}
+#aviso span{
+	font-family: gotham-bold,sans-serif;
+	font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    padding-bottom: 10px;
+}
+#retangulo{
+	display: block;
+    position: absolute;
+    content: '';
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    /*bottom: -15px;*/
+    z-index: 10;
+    background: inherit;
+}
+article{
+	width: 80%!important; 
+	margin: 0 auto!important;
+}
+.icontext h4{
+	font-size: 20px;
+	color: black!important;
+	padding-bottom:5px!important;
+	font-family: 'Droid Sans',Helvetica,Arial,Lucida,sans-serif!important; 
+	font-weight: bold;
+}
+.icontext p span{
+	font-family: gotham-book!important; 
+	font-size: 18px!important;
+	color: rgba(0,0,0,.6)!important;
+}
+.icons{
+	width: 100%!important;
+	margin: 0 auto!important;
+}
+@media screen and (max-width: 600px) {
+	.icons{
+		width: 90%!important;
+		/*position: relative!important;*/
+		margin: 0 auto!important;
+	}
+	article{
+		width: 90%!important; 
+		margin: 0 auto!important;
+		padding: 0px!important;
+	}
+	#aviso h2{
+		font-size: 20px;
+	}
+}
+
+/*********************************************************************************/
+/* Aside                                                                        */
+/*********************************************************************************/
+aside{
+	background-image: url(../img/foto-codigo.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 90px 0px 90px 0px;
+}
+#aside-container{
+	position: relative!important;
+	width: 80%!important;
+	margin: 0 auto!important;
+	padding:1% 0!important; 
+}
+aside div p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3em;
+    padding-bottom: 0.8em;
+    text-align: center;
+    color: #fff!important;
+}
+@font-face {
+	font-family: gotham-bold;
+ 	src: url('../font/GothamBoldRegular.ttf');
+}
+#text1{
+	font-family: Arial !important;
+	font-weight: bold;
+}
+#text2{
+
+}@media screen and (max-width: 600px) {
+	aside{
+		padding: 30px 0px 30px 0px;
+	}
+	#aside-container{
+		width: 100%!important;
+		margin: 0!important;
+		padding: 30px 0px!important;
+	}
+	#text1{
+		font-size: 24pt!important;
+	}
+	#text2{
+		font-size: 14pt!important;	
+	}
+}
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+
+footer{
+	background-color: rgba(35,35,34,1);
+}
+footer div ul {
+	padding: 15px 0px;
+	text-align: center;
+	margin-bottom: 0px; 
+}
+footer div ul li{
+	display: inline;
+	padding-right: 22px;
+	font-size: 18px;
+}
+.opt{
+	color: #858585;
+	text-decoration:none!important;
+	font-family: gotham-bold, sans-serif;
+}
+#bottom{
+	padding: 15px 0 5px;
+	background-color: #858585;
+}
+#bottom .container-fluid{
+	width: 80%!important;
+	margin: 0 auto!important;
+}
+#bottom-info{
+	padding: 0px;
+	text-align: right;
+}
+#bottom-info li a{
+	-webkit-text-size-adjust: 100%;
+}
+#footer-info{
+	font-size: 12px;
+	font-weight: bold;
+    font-style: normal;
+    color: rgba(35,35,34,1);
+    float: left;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	footer div ul li{
+		font-size: 16px;
+	}
+}
